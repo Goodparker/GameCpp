@@ -1,15 +1,23 @@
-﻿  Game.cpp
+﻿  Archer.cpp
+E:\Desktop\Паша\GameC++\GameCpp\Game\Archer.h(26,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "Archer.cpp")
+  
+  Game.cpp
 E:\Desktop\Паша\GameC++\GameCpp\Game\Warrior.h(30,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   (компиляция исходного файла "Game.cpp")
   
-E:\Desktop\Паша\GameC++\GameCpp\Game\Magician.h(12,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\Desktop\Паша\GameC++\GameCpp\Game\Magician.h(25,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   (компиляция исходного файла "Game.cpp")
   
-E:\Desktop\Паша\GameC++\GameCpp\Game\Archer.h(13,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\Desktop\Паша\GameC++\GameCpp\Game\Archer.h(26,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   (компиляция исходного файла "Game.cpp")
   
 E:\Desktop\Паша\GameC++\GameCpp\Game\Clicker.h(24,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   (компиляция исходного файла "Game.cpp")
+  
+  Magician.cpp
+E:\Desktop\Паша\GameC++\GameCpp\Game\Magician.h(25,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "Magician.cpp")
   
   Warrior.cpp
 E:\Desktop\Паша\GameC++\GameCpp\Game\Warrior.h(30,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных

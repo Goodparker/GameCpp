@@ -80,6 +80,9 @@ void InfoOfFighter()
 		break;
 	case 5:
 		break;
+	default:
+		cout << "choose another number \n";
+		break;
 	}
 }
 void СhoiceOfFighter()
@@ -110,6 +113,9 @@ void СhoiceOfFighter()
 		clicker.Start();
 		break;
 	case 5:
+		break;
+	default:
+		cout << "choose another number \n";
 		break;
 	}
 }

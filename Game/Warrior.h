@@ -60,7 +60,7 @@ public:
 			}
 			if (health > 0)
 			{
-				Fight1();
+				Fight3();
 			}
 			else
 			{
@@ -120,75 +120,113 @@ public:
 			break;
 		case 2:
 			break;
+		default:
+			cout << "choose another number \n";
+			break;
 		}
 
 	}
 	void Fight2()
-	{
-		if (fight.SecondLevel == true)
+	{	
+		if (health > 0)
 		{
-			Fight3();
-		}
-		else
-		{
-			system("cls");
-			std::string answer;
-			std::cout << "second room\n";
-			std::cout << "Hello," << name << std::endl;
-			int rnd = generate(4, 0);
-			std::cout << arr[rnd][0];
-			std::cout << "answer: ";
-			std::cin >> answer;
-			if (answer == arr[rnd][1])
+			if (fight.SecondLevel == true)
 			{
-				std::cout << "win\n";
-				force += generate(3, 0);
-				dexterity += generate(3, 0);
-				intelligence += generate(3, 0);
-				wisdom += generate(3, 0);
-				fight.SecondLevel = true;
 				Fight3();
 			}
 			else
 			{
-				std::cout << "lose\n";
-				health -= generate(3, 0);
-				force -= generate(3, 0);
-				dexterity -= generate(3, 0);
-				intelligence -= generate(3, 0);
-				wisdom -= generate(3, 0);
+				system("cls");
+				std::string answer;
+				std::cout << "second room\n";
+				std::cout << "Hello," << name << std::endl;
+				int rnd = generate(4, 0);
+				std::cout << arr[rnd][0];
+				std::cout << "answer: ";
+				std::cin >> answer;
+				if (answer == arr[rnd][1])
+				{
+					std::cout << "win\n";
+					force += generate(3, 0);
+					dexterity += generate(3, 0);
+					intelligence += generate(3, 0);
+					wisdom += generate(3, 0);
+					fight.SecondLevel = true;
+					Fight3();
+				}
+				else
+				{
+					std::cout << "lose\n";
+					health -= generate(3, 0);
+					force -= generate(3, 0);
+					dexterity -= generate(3, 0);
+					intelligence -= generate(3, 0);
+					wisdom -= generate(3, 0);
+					Fight2();
+				}
+				std::cout << "your characteristics after the battle:\n";
+				Info();
 			}
-			std::cout << "your characteristics after the battle:\n";
-			Info();
 		}
+		else
+		{
+			std::cout << "Sorry, you can't play this fighter anymore.";
+		}
+		
 		
 	}
 	void Fight3()
 	{
-		int answer;
-		system("cls");
-		std::cout << "Third room\n";
-		std::cout << "Hello," << name << std::endl;
-		std::cout << "Solve an example\n";
-		std::cout << "2+2*2= ";
-		std::cin >> answer;
-		if (answer == 8)
+		if (health > 0)
 		{
-			std::cout << "win\n";
-			/*force += generate(3, 0);
-			dexterity += generate(3, 0);
-			intelligence += generate(3, 0);
-			wisdom += generate(3, 0);*/
+			int rez, answer;
+			system("cls");
+			std::cout << "Third room\n";
+			std::cout << "Hello," << name << std::endl;
+			int rnd = generate(100, 0);
+			for (int i = 0; i < 5; i++)
+			{
+				std::cout << "rez";
+				std::cin >> rez;
+				if (rez > rnd)
+				{
+					std::cout << "rez > rnd";
+				}
+				else
+				{
+					std::cout << "rez < rnd";
+				}
+
+				if (rez == rnd)
+				{
+					std::cout << "win\n";
+				}
+			}
+				std::cout << "lose\n";
+				
+				std::cout << "Combat menu:\n"
+					"1. Continue to fight \n"
+					"2. Exit to main menu \n";
+
+				std::cout << "enter the action number: ";
+				std::cin >> answer;
+				switch (answer)
+				{
+				case 1:
+					Fight3();
+					break;
+				case 2:
+					break;
+				default:
+					cout << "choose another number \n";
+					break;
+				}
+
 		}
 		else
 		{
-			std::cout << "lose\n";
-			/*health -= generate(3, 0);
-			force -= generate(3, 0);
-			dexterity -= generate(3, 0);
-			intelligence -= generate(3, 0);
-			wisdom -= generate(3, 0);*/
-			Fight3();
+			std::cout << "Sorry, you can't play this fighter anymore.";
 		}
+		
 	}
 };
