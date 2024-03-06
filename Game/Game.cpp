@@ -1,10 +1,9 @@
 ﻿#include <iostream>
 #include <string>
 #include "Warrior.h"
-//#include "Magician.h"
+#include "Magician.h"
 #include "Archer.h"
 #include "Clicker.h"
-#include "Fighters.h"
 using namespace std;
 
 int deistvie = 0;
@@ -102,13 +101,13 @@ void СhoiceOfFighter()
 		warrior.Start();
 		break;
 	case 2:
-		magician.Print();
+		magician.Start();
 		break;
 	case 3:
-		archer.Print();
+		archer.Start();
 		break;
 	case 4:
-		clicker.Print();
+		clicker.Start();
 		break;
 	case 5:
 		break;

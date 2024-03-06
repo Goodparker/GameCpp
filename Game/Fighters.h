@@ -1,14 +1,11 @@
 #pragma once
 #include <iostream>
-
-#include "Magician.h"
-
+#include <string>
 
 class Fighters
 {
 public:
-	bool FirstLevel = false,SecondLevel = false;
-	Fighters() {};
-
+	bool FirstLevel = false,
+		SecondLevel = false;
 };
 

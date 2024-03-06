@@ -71,13 +71,15 @@ public:
 	//------------------------------------------------------------------------------------------------
 	void Fight1()
 	{
+
+
 		system("cls");
 		int you, bot, answer;
 		std::cout << "first room\n";
 		std::cout << "your characteristics before the fight\n";
 		Info();
-		you = generate(6, 1);
-		bot = generate(6, 1);
+		you = generate(6, 0);
+		bot = generate(6, 0);
 		std::cout << "\nyou: " << you << "  bot: " << bot << std::endl;
 		if (you > bot)
 		{
@@ -125,7 +127,7 @@ public:
 	{
 		if (fight.SecondLevel == true)
 		{
-			//Fight3();
+			Fight3();
 		}
 		else
 		{
@@ -144,6 +146,8 @@ public:
 				dexterity += generate(3, 0);
 				intelligence += generate(3, 0);
 				wisdom += generate(3, 0);
+				fight.SecondLevel = true;
+				Fight3();
 			}
 			else
 			{
@@ -158,5 +162,33 @@ public:
 			Info();
 		}
 		
+	}
+	void Fight3()
+	{
+		int answer;
+		system("cls");
+		std::cout << "Third room\n";
+		std::cout << "Hello," << name << std::endl;
+		std::cout << "Solve an example\n";
+		std::cout << "2+2*2= ";
+		std::cin >> answer;
+		if (answer == 8)
+		{
+			std::cout << "win\n";
+			/*force += generate(3, 0);
+			dexterity += generate(3, 0);
+			intelligence += generate(3, 0);
+			wisdom += generate(3, 0);*/
+		}
+		else
+		{
+			std::cout << "lose\n";
+			/*health -= generate(3, 0);
+			force -= generate(3, 0);
+			dexterity -= generate(3, 0);
+			intelligence -= generate(3, 0);
+			wisdom -= generate(3, 0);*/
+			Fight3();
+		}
 	}
 };
