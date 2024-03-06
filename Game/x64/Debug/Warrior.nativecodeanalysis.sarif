@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33520.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/desktop/паша/game/game/warrior.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "0c8fdcb954360b0b002ee0d97344c8f73b560ca05037e407f3f882cf61f9df25"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/desktop/паша/game/game/warrior.h"
+          },
+          "hashes": {
+            "sha-256": "1e4bec597b4fb48763a774515582ac8ae74f3d7d1dc84e57741186eb947d8200"
+          }
+        }
+      ]
+    }
+  ]
+}

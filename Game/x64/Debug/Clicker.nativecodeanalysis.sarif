@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33520.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/desktop/паша/game/game/clicker.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "889df8e8b54f8e1e3e4bd613cb314af82b96d7333f2180a500e6ff4d3cf8b49e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/desktop/паша/game/game/clicker.h"
+          },
+          "hashes": {
+            "sha-256": "ae1de019b8af07f9931eb6e07ee101777f09256d7d9bb483266330330f30c66a"
+          }
+        }
+      ]
+    }
+  ]
+}

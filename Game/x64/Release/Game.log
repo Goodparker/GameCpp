@@ -1,0 +1,29 @@
+﻿  Fighters.cpp
+E:\Desktop\Паша\Game\Game\Magician.h(12,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "Fighters.cpp")
+  
+  Game.cpp
+E:\Desktop\Паша\Game\Game\Magician.h(12,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "Game.cpp")
+  
+E:\Desktop\Паша\Game\Game\Warrior.h(30,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "Game.cpp")
+  
+E:\Desktop\Паша\Game\Game\Archer.h(13,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "Game.cpp")
+  
+E:\Desktop\Паша\Game\Game\Clicker.h(12,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "Game.cpp")
+  
+  Warrior.cpp
+E:\Desktop\Паша\Game\Game\Magician.h(12,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "Warrior.cpp")
+  
+E:\Desktop\Паша\Game\Game\Warrior.h(30,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "Warrior.cpp")
+  
+  Создание кода
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 150 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Game.vcxproj -> E:\Desktop\Паша\Game\x64\Release\Game.exe
